@@ -1,32 +1,81 @@
-
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<style>
-	#box{
-		background-color:gray;
-		height:20px;
-		overflow:hidden;
-	}
-	.a{
-		background-color:red;
-		width:0;
-		height:20px;
-		margin: 0 auto;
-		transition:width .8s;
-		-webkit-transition:width .8s;
-	}
-	#box:hover .a{
-		width:100%;
-		transition:width .8s;
-		-webkit-transition:width .8s;
-	}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人简历</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script>
+        let w = document.documentElement.clientWidth || document.body.clientWidth;
+        // w/640 = x/100
+        document.documentElement.style.fontSize = w/640*100 + 'px';
+    </script>
 </head>
 <body>
-<div id="box">
-<div class="a"></div>
-</div>
+    <div>
+        <div class="bgmIcon">
+            <a href="javascript:;" class="playBtn"></a>
+        </div>
+        <!-- 封面块 -->
+        <section class="coverBox  ">
+            <header>
+                <img src="./img/img01.jpg" alt="">
+            </header>
+            <div class="centerBox">
+                <img src="./img/img02.jpg" alt="">
+            </div>
+            <footer>
+                <ul>
+                    <li>姓名：迪丽热巴·迪力木拉提</li>
+                    <li>手机：12345678901</li>
+                    <li>邮箱：11111@qq.com</li>
+                </ul>
+            </footer>
+        </section>
+        <!-- 个人简介块 -->
+        <section class="myResume  hide ">
+            <div class="leftImg">
+                <img src="./img/img04.jpg" class="leftImg1" alt="">
+                <img src="./img/img05.jpg" class="leftImg2" alt="">
+            </div>
+            <div class='rightBox'>
+                <img src="./img/img03.jpg" class="imgReba" alt="">
+                <div class="centerNav">
+                    <img src="./img/img06.jpg" class="imgIcon" alt="">
+                    <span>个人简介......</span>
+                </div>
+                <div class="line"></div>
+                <ul>
+                    <li>姓名：迪丽热巴·迪力木拉提</li>
+                    <li>专业：演员吧</li>
+                    <li>学校：上海戏剧学院</li>
+                    <li>学历：本科</li>
+                    <li>出生年月：1992年6月</li>
+                    <li>婚姻状况：未婚</li>
+                    <li>联系方式：12345678901</li>
+                    <li>家庭住址：新疆乌鲁木齐</li>
+                    <li>爱好：吃</li>
+                    <li>应聘岗位：吃货CEO</li>
+                    <li>工作经验：5年</li>
+                </ul>  
+                <ul class="animateBox">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul> 
+            </div>
+        </section>
+        <!-- 工作经历块 -->
+        <!-- <section class="workBox">
+            <div class="leftImg">
+                <img src="./img/img04.jpg" class="leftImg1" alt="">
+                <img src="./img/img05.jpg" class="leftImg2" alt="">
+            </div>
+            
+        </section> -->
+    </div>
 </body>
 </html>
-
